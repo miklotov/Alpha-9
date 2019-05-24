@@ -1,12 +1,17 @@
+var express = require("express");
+
+var router = express.Router();
+// grabbing our models
 var db = require("../models");
 
+
 module.exports = function(app) {
-  // Load index page
+//  Load index page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    db.Community.findAll({}).then(function(Community) {
       res.render("index", {
         msg: "Welcome!",
-        examples: dbExamples
+        examples: Community
       });
     });
   });
