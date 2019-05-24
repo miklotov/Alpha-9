@@ -1,7 +1,7 @@
 {
-  "name": "project2_prototype",
+  "name": "",
   "version": "1.0.0",
-  "description": "",
+  "description": "miklotov/Alpha-9",
   "main": "server.js",
   "directories": {
     "test": "test"
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jlbivins/Project2_Prototype.git"
+    "url": "git+https://github.com/miklotov/Alpha-9.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jlbivins/Project2_Prototype/issues"
+    "url": "https://github.com/miklotov/Alpha-9/issues"
   },
-  "homepage": "https://github.com/jlbivins/Project2_Prototype#readme"
+  "homepage": "https://github.com/miklotov/Alpha-9#readme"
 }
