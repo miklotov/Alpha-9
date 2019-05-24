@@ -1,17 +1,27 @@
+var express = require("express");
+
+var router = express.Router();
+// grabbing our models
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
-  });
+  //Get all examples
+// debugger
+//  console.log("getting db + " + db)
+ app.get("/api/community", function(req, res) {
+ //  debugger
+  // console.log(req)
+ //  debugger
+    db.Community.findAll({role: 'admin'}).then(admins => {
+      console.log(`Found ${admins.length} matching records.`);
+      res.json(admins);
+   });
+ });
 
   // Create a new example
   app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+    db.Community.create(req.body).then(function(admins) {
+      res.json(admins);
     });
   });
 

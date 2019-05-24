@@ -4,6 +4,8 @@ var exphbs = require("express-handlebars");
 
 var db = require("./models");
 
+
+
 var app = express();
 var PORT = process.env.PORT || 3001;
 
@@ -23,6 +25,7 @@ app.set("view engine", "handlebars");
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+//require("./controllers/community_controller/")(app);
 
 var syncOptions = { force: false };
 
@@ -42,5 +45,6 @@ db.sequelize.sync(syncOptions).then(function() {
     );
   });
 });
+
 
 module.exports = app;
