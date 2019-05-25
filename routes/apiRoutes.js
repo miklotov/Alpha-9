@@ -4,6 +4,7 @@ var router = express.Router();
 // grabbing our models
 var db = require("../models");
 
+
 module.exports = function(app) {
   //Get all examples
 // debugger
@@ -17,6 +18,19 @@ module.exports = function(app) {
       res.json(admins);
    });
  });
+
+//  app.post("/api/event_update", function(req,res){
+//    db.Community.create({
+//      first_name: req.body.first_name,
+//      last_name: req.body.last_name,
+//      qty: req.body.qty,
+//      item: req.body.item,
+//      email: req.body.email
+//       }).then (function(admins){res.json(admins);
+//       });
+
+  // })
+ 
 
   // Create a new example
   app.post("/api/examples", function(req, res) {

@@ -1,7 +1,9 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
+var $signupBtn = $("#signupBtn");
+//var $submitBtn = $("#submitBtn");
+
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -94,6 +96,13 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+var signupFunction = function(){
+  console.log("clicked signup button");
+  window.location = "/signup"
+}
+
+
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
+$signupBtn.on("click", signupFunction);
+//$picnicBtn.on("click", gotoPicnicSignup);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
