@@ -4,27 +4,42 @@
 <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
         <h2>Welcome to Sunshine Hills Subdivision!</h2>
-        
-        <form class="clearfix mb-4" action="POST">
+        <br><br><br>
+        {{!-- <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            {{!-- <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text"> --}}
+             <label for="example-text">Example Text</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
           </div>
           <div class="form-group">
-            {{!-- <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea> --}}
+             <label for="example-description">Example Description</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+          </div> --}}
+          <div>
+            <h4>To signup for picnic, click 'Picnic Signup' button</h4>          
+            <button id="signupBtn" class="btn btn-primary float-right">Picnic Signup</button>
           </div>
-          <button id="submit" class="btn btn-primary float-right">Event Signup</button>
         </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+        {{!-- <h3>Examples:</h3> --}}
+        <br><br><br>
+
+        <div>
+            <h4>To view/add to our Security Incidents page, click 'Security Incidents' button</h4>          
+            <button id="security" class="btn btn-primary float-right">Security Incidents</button>
+          </div>
+        </form>
+        {{!-- <h3>Examples:</h3> --}}
+        <br><br><br>
+
+        {{!-- <div>
+          <ul id="example-list" class="list-group">
+            {{#each examples}}
+            <li data-id="{{this.id}}" class="list-group-item">
+              <a href="example/{{this.id}}">{{this.text}}</a>
+              <button class="btn btn-danger float-right delete">ｘ</button>
+            </li>
+            {{/each}}
+          </ul>
+        </div> --}}
       </div>
     </div>
   </div>
