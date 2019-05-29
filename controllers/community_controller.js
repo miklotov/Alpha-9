@@ -20,7 +20,7 @@ router.get("/signup", function(req, res) {
       ["last_name", "ASC"]
     ]
   })
-  // use promise method to pass the burgers...
+  // use promise method to pass the ...
     .then(function(dbCommunity) {
     // into the main index, updating the page
       var hbsObject = {

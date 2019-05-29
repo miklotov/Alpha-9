@@ -2,6 +2,7 @@
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $signupBtn = $("#signupBtn");
+var $submitBtn = $("#submitBtn");
 //var $submitBtn = $("#submitBtn");
 
 var $exampleList = $("#example-list");
@@ -101,8 +102,22 @@ var signupFunction = function(){
   window.location = "/signup"
 }
 
+var postnewPicnicSignup = function(){
+  console.log("clicked submit button");
+  window.location = "/signup"
+}
+
 
 // Add event listeners to the submit and delete buttons
 $signupBtn.on("click", signupFunction);
-//$picnicBtn.on("click", gotoPicnicSignup);
+// $(function(){
+//   $submitBtn.on("click", function(){
+//     console.log("event listener working")
+//   });
+// });
+
+$(window).on("click","#submitBtn", function(){
+  console.log("event listener working")
+});
+
 $exampleList.on("click", ".delete", handleDeleteBtnClick);

@@ -1,37 +1,54 @@
 <h2>Picnic Signup</h2>
 <div><br>
-<br>
-{{# each data}}
-   {{this.first_name}}
-   {{this.last_name}}
-   {{this.item}}
-   {{this.qty}}
-   {{this.email}}
-{{/each}}
-<br><br>
-
+    <br>
+    <table style="width:75%">
+  <tr>
+    <th>id</th>  
+    <th>first name</th>
+    <th>last_name</th> 
+    <th>qty</th>
+    <th>item</th>
+    <th>email</th>
+  </tr>
+    {{# each data}}
+    {{!-- {{this.first_name}}
+    {{this.last_name}}
+    {{this.qty}}
+    {{this.item}}
+    {{this.email}}{{br}} --}}
+    
+  <tr>
+    <td>{{this.id}}</td>  
+    <td>{{this.first_name}}</td>
+    <td>{{this.last_name}}</td> 
+    <td>{{this.qty}}</td>
+    <td>{{this.item}}</td>
+    <td>{{this.email}}</td>
+  </tr>
+    {{/each}}
 </div>
 
 <form>
-  First name:<br>
-  <input type="text" name="firstname" value="">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="">
-  <br>
-  Item:<br>
-  <input type="text" name="item" value="">
-  <br>
-  Qty:<br>
-  <input type="text" name="qty" value="">
-  <br>
-  Email:<br>
-  <input type="text" name="email" value="">
-  <br><br>
-  <input type="submit" value="Submit">
+    First name:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="">
+    <br>
+    Item:<br>
+    <input type="text" name="item" value="">
+    <br>
+    Qty:<br>
+    <input type="text" name="qty" value="">
+    <br>
+    Email:<br>
+    <input type="text" name="email" value="">
+    <br><br>
+    <input id="submitBtn" type="submit" value="Submit">
+    {{!-- <button id="submitBtn" type="submit" form="nameform" value="Submit">Submit</button>  --}}
 </form>
 <br><br>
- <a href="/">← Back To Home</a>
+<a href="/">← Back To Home</a>
 {{!-- <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
@@ -51,4 +68,3 @@
     </div>
   </div>
 </div> --}}
-

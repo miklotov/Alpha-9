@@ -21,6 +21,10 @@ module.exports = function (app) {
       console.log(`Found ${admins.length} matching records.`);
       res.render("signup",{data:admins});
    });
+
+  app.post("/post",function (req, res) {
+       console.log("submit button clicked");
+  });
     // axios.get("api/community").then(
     //   function (data) {
     //     console.log(data);
