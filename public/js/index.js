@@ -97,10 +97,10 @@ var handleDeleteBtnClick = function() {
   });
 };
 
-var signupFunction = function(){
-  console.log("clicked signup button");
-  window.location = "/signup"
-}
+// var signupFunction = function(){
+//   console.log("clicked signup button");
+//   window.location = "/signup"
+// }
 
 var postnewPicnicSignup = function(){
   console.log("clicked submit button");
@@ -109,7 +109,7 @@ var postnewPicnicSignup = function(){
 
 
 // Add event listeners to the submit and delete buttons
-$signupBtn.on("click", signupFunction);
+//$signupBtn.on("click", signupFunction);
 // $(function(){
 //   $submitBtn.on("click", function(){
 //     console.log("event listener working")
