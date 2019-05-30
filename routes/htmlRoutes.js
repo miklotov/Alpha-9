@@ -19,6 +19,7 @@ module.exports = function (app) {
   app.get("/signup", function (req, res) {
     db.Community.findAll({role: 'admin'}).then(admins => {
       console.log(`Found ${admins.length} matching records.`);
+      console.log(admins)
       res.render("signup",{data:admins});
    });
 
