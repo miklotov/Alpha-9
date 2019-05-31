@@ -4,11 +4,11 @@ var sequelize = require("../config/connection.js");
 module.exports = function (sequelize, DataTypes){ 
   var Community = sequelize.define("Community", {
    // var Community = sequelize.define("community_db", {  
-    id: {
-      type: DataTypes.UUID,
-      primaryKey: true,
-      defaultValue: DataTypes.UUIDV4
-    },
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   primaryKey: true,
+    //   defaultValue: DataTypes.INTEGER
+    // },
     first_name: {
       type: DataTypes.STRING,
       required: true

@@ -1,51 +1,57 @@
 <h2>Picnic Signup</h2>
 <div><br>
-    <br>
-    <table style="width:75%">
-  <tr>
-    <th>id</th>  
-    <th>first name</th>
-    <th>last_name</th> 
-    <th>qty</th>
-    <th>item</th>
-    <th>email</th>
-  </tr>
-    {{# each data}}
-    {{!-- {{this.first_name}}
+  <br>
+  <table class="table" style="width:75%">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>first name</th>
+        <th>last_name</th>
+        <th>qty</th>
+        <th>item</th>
+        <th>email</th><th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{# each data}}
+      {{!-- {{this.first_name}}
     {{this.last_name}}
     {{this.qty}}
     {{this.item}}
     {{this.email}}{{br}} --}}
-    
-  <tr>
-    <td>{{this.id}}</td>  
-    <td>{{this.first_name}}</td>
-    <td>{{this.last_name}}</td> 
-    <td>{{this.qty}}</td>
-    <td>{{this.item}}</td>
-    <td>{{this.email}}</td>
-  </tr>
-    {{/each}}
+
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>{{this.qty}}</td>
+        <td>{{this.item}}</td>
+        <td>{{this.email}}</td>
+        <td><button class="deleteBtn" data-item={{this.id}}>Delete</button></td>
+      </tr>
+      {{/each}} 
+    </tbody>
+  </table>
 </div>
 
 <form>
-    First name:<br>
-    <input id="first" type="text" name="firstname" value="">
-    <br>
-    Last name:<br>
-    <input id="last" type="text" name="lastname" value="">
-    <br>
-    Qty:<br>
-    <input id="item" type="text" name="item" value="">
-    <br>
-    Item:<br>
-    <input id="qty" type="text" name="qty" value="">
-    <br>
-    Email:<br>
-    <input id="email" type="text" name="email" value="">
-    <br><br>
-    <input id="submitBtn" type="submit" value="Submit">
-    {{!-- <button id="submitBtn" type="submit" form="nameform" value="Submit">Submit</button>  --}}
+  First name:<br>
+  <input id="first" type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input id="last" type="text" name="lastname" value="">
+  <br>
+  Qty:<br>
+  <input id="item" type="text" name="item" value="">
+  <br>
+  Item:<br>
+  <input id="qty" type="text" name="qty" value="">
+  <br>
+  Email:<br>
+  <input id="email" type="text" name="email" value="">
+  <br><br>
+  <input id="submitBtn" type="submit" value="Submit">
+  {{!-- <button id="submitBtn" type="submit" form="nameform" value="Submit">Submit</button>  --}}
 </form>
 <br><br>
 <a href="/">← Back To Home</a>

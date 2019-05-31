@@ -10,15 +10,15 @@ item VARCHAR(50),
 email VARCHAR(50),
 PRIMARY KEY (id)
 );
-INSERT INTO picnic (first_name, last_name, qty, item, email)
-VALUES ("John","Day", 2, "packs hot dog buns", "john@yahoo.com");
-INSERT INTO picnic (first_name, last_name, qty, item, email)
-VALUES ("Melissa","Jones", 1, "case of water", "mel@godaddy.net");
-INSERT INTO picnic (first_name, last_name, qty, item, email)
-VALUES ("Frank","Smith", 1, "bottle ketchup", "fs@blahblah.org");
-INSERT INTO picnic (first_name, last_name, qty, item, email)
-VALUES ("Susan","Green", 1, "pack of napkins", "sg@yoohoo.com");
-INSERT INTO picnic (first_name, last_name, qty, item, email)
-VALUES ("Sandy","Springs", 5, "cases of soda", "ss@yeehee.net");
-SELECT * from picnic;
+-- INSERT INTO picnic (first_name, last_name, qty, item, email)
+-- VALUES ("John","Day", 2, "packs hot dog buns", "john@yahoo.com");
+-- INSERT INTO picnic (first_name, last_name, qty, item, email)
+-- VALUES ("Melissa","Jones", 1, "case of water", "mel@godaddy.net");
+-- INSERT INTO picnic (first_name, last_name, qty, item, email)
+-- VALUES ("Frank","Smith", 1, "bottle ketchup", "fs@blahblah.org");
+-- INSERT INTO picnic (first_name, last_name, qty, item, email)
+-- VALUES ("Susan","Green", 1, "pack of napkins", "sg@yoohoo.com");
+-- INSERT INTO picnic (first_name, last_name, qty, item, email)
+-- VALUES ("Sandy","Springs", 5, "cases of soda", "ss@yeehee.net");
+-- SELECT * from picnic;
 
